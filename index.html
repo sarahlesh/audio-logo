@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'> 
 	<link rel="stylesheet" href="animate.css">
 	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="color-code-pen copy.png" type="image/png" >
 	<meta charset="UTF-8">
-	<title>HJC Fun</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HJC Dance Party</title>
 </head>
-<body>
+<body> 
 
-<h1><span class="h animated infinite bounce">h</span><span class="j animated infinite jello">j</span><span class="c animated infinite flip">c</span></h1>
+<h1><span id="h" class="h animated infinite bounce">h</span><span class="j animated infinite jello">j</span><span class="c animated infinite flip">c</span></h1>
+
+<h2 class="thanks hide">Goodbye!</h2>
+
+
+	<audio id="demo" src="SpaceJam.mp3"></audio>
+	<div class="buttons">
+	<!-- Play Button -->
+	  <div class="play" onclick="document.getElementById('demo').play()">
+
+	  	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="play-circle" fill="rgba(34, 136, 239, 1)" stroke="rgba(34, 136, 239, 1)" x="0px" y="0px" width="60px" height="60px" viewBox="5.0 -10.0 100.0 135.0" enable-background="new 0 0 100 100" xml:space="preserve">
+	  	<path d="M50,100C22.43,100,0,77.57,0,50S22.43,0,50,0s50,22.43,50,50S77.57,100,50,100z M50,4C24.636,4,4,24.636,4,50  s20.636,46,46,46s46-20.636,46-46S75.364,4,50,4z"/>
+	  	<path d="M37,77.568V22.431L74.615,50L37,77.568z M41,30.321v39.356L67.85,50L41,30.321z"/>
+	  	</svg>
+	  	<!-- thanks for the icon Alen Krummenacher -->
+	  </div>
+
+	<!-- Pause Button -->
+	  <div class="pause" onclick="document.getElementById('demo').pause()">
+	  	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="pause_outline_circle_outline" x="0px" y="0px" fill="rgba(34, 136, 239, 1)" stroke="rgba(34, 136, 239, 1)" width="60px" height="60px" viewBox="5.0 -10.0 100.0 135.0" enable-background="new 0 0 100 100" xml:space="preserve">
+	  	<path d="M50,100C22.43,100,0,77.57,0,50S22.43,0,50,0s50,22.43,50,50S77.57,100,50,100z M50,4C24.636,4,4,24.636,4,50  s20.636,46,46,46s46-20.636,46-46S75.364,4,50,4z"/>
+	  	<path d="M45,73H29V27h16V73z M33,69h8V31h-8V69z"/>
+	  	<path d="M71,73H55V27h16V73z M59,69h8V31h-8V69z"/>
+	  	</svg>
+
+	  	<!-- Thanks for the icon Alen Krummenacher -->
+	  </div>
+	</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="scripts.js"></script>
 	
 </body>
 </html>
